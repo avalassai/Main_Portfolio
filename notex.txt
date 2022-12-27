@@ -1,0 +1,11 @@
+27-12-2022:how to make side bar fixed if you are using flexbox
+====================================================================================================================
+overflow : hidden; property
+
+if you wan to keep side bar fixed it is not possible if you are using flex box. so we use over flow condition,
+
+in container block use overflow: hidden and in main block use overflow-y:auto;
+
+By following above process we can make side bar fixed while the main content scrollable
+
+========================================================================================================================

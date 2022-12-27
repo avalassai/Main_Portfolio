@@ -2,24 +2,27 @@
     margin: 0;
     font-family: inherit;
     box-sizing: inherit;
+    flex-shrink: 0;
 }
 .Container{
-    height: 100vh;
     display: flex;
+    height: 100vh;
+    /* overflow: hidden; */
 }
 .side_header{
     flex: 0.13;
-    padding: 10px 10px;
+    /* padding: 10px 10px; */
     display: flex;
     flex-direction: column;
     background-color: yellow;
-    /* box-shadow: 0 10px 100px rgb(0 0 0 / 30%); */
+    /* align-self: flex-start; */
+  
 }
-.name_logo{
+.name_image{
     display: flex;
     flex-direction: column;
     flex:0.5; 
-    font-size: 23px;
+    font-size: 22px;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -32,7 +35,7 @@
     border-radius: 50%;
 }
 .name{
-    flex:0.87;
+    flex:0.5;
     display: flex;
     align-items: center;
     text-align: center;
@@ -44,7 +47,7 @@
     display: flex;
     flex-direction: column;
 }
-.name_1{
+.details{
     justify-content: center;
     text-align: center;
     flex:0.22;
@@ -54,10 +57,17 @@
     color: #333;
 }
 .main{
-    flex: 0.9;
-    display: flex;
+    padding-left: 5px;
+    flex: 0.87;
     background-color: #333;
+    color: aliceblue;
+    /* position: -webkit-sticky; */
+    /* position: sticky;
+    top: 0; */
+    overflow-y: auto;
+    
 }
+
 body {
     box-sizing: border-box;
     position: relative;
@@ -68,8 +78,8 @@ body {
     font-family: 'Source Sans Pro',sans-serif;
 }
 
-.name_1:active , .name_1:hover{
-    font-size: 119%;
+.details:active , .details:hover{
+    font-size: 110%;
     transition-duration: 0.15s;
     color: black;
     font-weight: 700;
@@ -79,3 +89,12 @@ body {
     transition-duration: 0.15s;
     color: black;
 }
+::-webkit-scrollbar {
+    background: #333;
+  }
+  
+  /* Style the scrollbar handle */
+  ::-webkit-scrollbar-thumb {
+    background: #333;
+  }
+ 
